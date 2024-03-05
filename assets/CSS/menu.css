@@ -1,0 +1,97 @@
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+    z-index: 1;
+}
+
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu h1{
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+.menu h1 a{
+    color:inherit
+}
+
+.menu ul li a{
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    position: relative;
+}
+
+.menu ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+.menu ul ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+.menu ul li:hover > ul{
+    display: inherit;
+}
+
+.menu ul ul li{
+    width: 20rem;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.sub-menu li a{
+    background: var(--light-gray-color);
+    top: -0.5rem;
+}
+
+.sub-menu li a::after{
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--secondary-color);
+    transition: all 300ms ease-in-out;
+}
+
+.sub-menu li a:hover::after{
+    width: 50%;
+    left: 25%;
+}
+
+.logo{
+    height: 6.7rem;
+    width: 12rem;
+}

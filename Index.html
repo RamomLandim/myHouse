@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Landing Page</title>
+    <link rel="stylesheet" href="assets/CSS/variables.css">
+    <link rel="stylesheet" href="assets/CSS/elements.css">
+    <link rel="stylesheet" href="assets/CSS/classes.css">
+    <link rel="stylesheet" href="assets/CSS/menu.css">
+    <link rel="stylesheet" href="assets/CSS/home.css">
+    <link rel="stylesheet" href="assets/CSS/intro.css">
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="main-bg">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="Close menu"></label>
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked=false">
+                <a href="#home"><img src="assets/img/logo.PNG" class="logo"></a>
+            </h1>
+
+            <nav>
+                <ul onclick="getElementById('close-menu').checked=false">
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#grid-one">Nossos Filhos</a></li>
+                    <li><a href="#gallery">Produtos</a>
+                        <ul class="sub-menu">
+                            <li><a href="#cozinha">Cozinha</a></li>
+                            <li><a href="#gallery">Banheiro</a></li>
+                            <li><a href="#gallery">Quarto</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="menu-spacing"></div>
+    <section id="home" class="home main-bg section">
+        <div class="main-content home-content">
+            <div class="home-text-content">
+                <h2>Nossa casinha</h2>
+                <p>Meu Deus,<br>
+                    Abençoa a jornada que esta apenas iniciando...
+                    Ilumina meus passos, dá-me serenidade em meio ao inesperado, sabedoria na tomada de decisões e leveza de espirito para superar e vencer cada dificuldade do dia...</p>
+                </div>
+            <div class="home-img">
+                <img src="assets/img/love-main-not-optimized.svg"
+                    alt="Um home e uma mulher segurando as maos como sinal de amor">
+            </div>
+        </div>
+    </section>
+
+    <section id="music" class="white-bg section">
+        <div class="main-content intro-content">
+            <h2><a href="https://www.youtube.com/watch?v=dtiTYqTefw0&ab_channel=Tradu%C3%A7%C3%B5esAnos80" target="_blank">🎶 Nossa musica 🎶</a></h2>
+            <p>I could stay awake just to hear you breathing
+                Watch you smile while you are sleeping
+                While you're far away and dreaming
+                I could spend my life in this sweet surrender
+                I could stay lost in this moment forever
+                Where a moment spent with you is a moment I treasure</p>
+            <p>Don't wanna close my eyes
+                I don't wanna to fall asleep
+                'Cause I'd miss you baby
+                And I don't wanna miss a thing
+                'Cause even when I dream of you (even when I dream)
+                The sweetest dream would never do
+                I'd still miss you baby
+                And I don't wanna miss a thing</p>
+        </div>
+    </section>
+
+    <section id="grid-one" class="top3 main-bg section">
+        <div class="main-content top3-content">
+            <h2 class="grid-main-heading">Por nossos filhoes</h2>
+            <p class="grid-description">~Maricota | Pipinho | Babalu</p>
+            <div class="grid">
+                <article>
+                    <h3>Maricotinha</h3>
+                    <div class="gallery-img">
+                        <img src="assets/img/Maricota.png" alt="random imagem frons unsplash">
+                    </div>
+                </article>
+                <article>
+                    <h3>Pipinho</h3>
+                    <div class="gallery-img">
+                        <img src="assets/img/Pipinho.png" alt="random imagem frons unsplash">
+                    </div>
+                </article>
+                <article>
+                    <h3>Babalu</h3>
+                    <div class="gallery-img">
+                        <img src="assets/img/Balu.png" alt="random imagem frons unsplash">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="top3 white-bg section">
+        <div id="cozinha" class="main-content top3-content">
+            <h2 class="grid-main-heading">Cozinha</h2>
+            <p class="grid-description">Produtos para montar nossa cozinha</p>
+            <div class="grid">
+                <div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=1" alt="random imagem frons unsplash">
+                    </div>
+
+                    <div class="">
+                        <p class="jss149 jss150 MuiTypography-h6">Conjunto de
+                            Copos Lights 6 peças - Nadir</p>
+                        <div class="">
+                            <div class="jss169">
+                                <div class="jss164">
+                                    <div class="jss152">R$&nbsp;19,99</div>
+                                </div>
+                            </div>
+                            <div class="jss154"></div>
+                            <div class="jss169">
+                                <div class="jss164">
+                                    <div class="jss179">R$&nbsp;29,99</div><span
+                                        class="jss181 jss182">em até 2x de<span class="jss183">
+                                            R$&nbsp;14,99</span></span>
+                                    <div class="jss181 jss182">sem juros no cartão</div>
+                                    <div class="jss154"></div>
+                                    <div class="jss151 jss177">Frete R$ 9,90 ou <br>
+                                        <P class="jss152">Gratis Retirada na loja</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="random imagem frons unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="random imagem frons unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="random imagem frons unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="random imagem frons unsplash">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="random imagem frons unsplash">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="grid-two" class="top3 main-bg section">
+        <div class="main-content top3-content">
+            <h2 class="grid-main-heading">Top 3 Jobs</h2>
+            <p class="grid-description">Apenas uma descrição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium voluptates quibusdam
+                        molestias, totam molestiae dolore quae reprehenderit mollitia libero unde a sint ratione commodi
+                        qui
+                        enim quidem sapiente provident!</p>
+                </article>
+                <article>
+                    <h3>Teste 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium voluptates quibusdam
+                        molestias, totam molestiae dolore quae reprehenderit mollitia libero unde a sint ratione commodi
+                        qui
+                        enim quidem sapiente provident!</p>
+                </article>
+                <article>
+                    <h3>Teste 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laudantium voluptates quibusdam
+                        molestias, totam molestiae dolore quae reprehenderit mollitia libero unde a sint ratione commodi
+                        qui
+                        enim quidem sapiente provident!</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="white-bg section">
+        <div class="main-content intro-content">
+            <h2>Pricing</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo accusamus debitis inventore
+                perferendis, harum laborum asperiores veniam numquam dolor impedit in saepe molestias ratione assumenda
+                ea temporibus quia suscipit autem?</p>
+
+        </div>
+    </section>
+</body>
+
+</html>
