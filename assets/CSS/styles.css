@@ -196,7 +196,7 @@
     border: 0.1rem solid var(--primary-color);
   }
 
-@media(max-width: 80rem) {
+@media(max-width: 75rem) {
 
     .home-content,
     .grid {
@@ -272,6 +272,16 @@
     .menu-spacing {
         display: none;
     }
+
+    .sub-menu {
+        display: none;
+    }
+    
+    .sub-menu.active {
+        display: block;
+        background: red;
+    }    
+
 
     h1 {
         font-size: 4rem;

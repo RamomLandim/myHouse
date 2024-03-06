@@ -70,27 +70,6 @@
     position: relative;
 }
 
-.sub-menu li a{
-    background: var(--light-gray-color);
-    top: -0.5rem;
-}
-
-.sub-menu li a::after{
-    content: '';
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    width: 0;
-    height: 0.2rem;
-    background: var(--secondary-color);
-    transition: all 300ms ease-in-out;
-}
-
-.sub-menu li a:hover::after{
-    width: 50%;
-    left: 25%;
-}
-
 .logo{
     height: 6.7rem;
     width: 12rem;
