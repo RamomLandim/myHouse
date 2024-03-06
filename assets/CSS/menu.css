@@ -16,17 +16,17 @@
     padding-bottom: 0;
 }
 
-.menu ul{
-    list-style: none;
-    display: flex;
-}
-
 .menu h1{
     font-size: 2.3rem;
     color: var(--primary-color);
 }
 .menu h1 a{
     color:inherit
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
 }
 
 .menu ul li a{
