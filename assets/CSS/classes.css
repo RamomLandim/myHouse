@@ -10,6 +10,11 @@
     color: var(--primary-color);
 }
 
+.creme-bg{
+    background: var(--creme-color);
+    color: var(--primary-color);
+}
+
 .main-content{
     max-width: 120rem;
     margin: 0 auto;

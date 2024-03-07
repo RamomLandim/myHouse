@@ -112,6 +112,18 @@
     line-height: 1.6;
 }
 
+.jss190 {
+    font-size: 1.7rem;
+    color: var(--white-color);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.jss191 {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
 .jss169 {
     display: flex;
     align-items: center;
@@ -134,6 +146,13 @@
 
 .jss154 {
     width: 3rem;
+    height: 0.2rem;
+    margin: 1rem 0;
+    background: var(--secondary-color);
+}
+
+.jss155 {
+    width: inherit;
     height: 0.2rem;
     margin: 1rem 0;
     background: var(--secondary-color);
@@ -196,10 +215,10 @@
     border: 0.1rem solid var(--primary-color);
   }
 
-@media(max-width: 75rem) {
+@media(max-width: 70rem) {
 
     .home-content,
-    .grid {
+    .grid, .grid-3fr {
         grid-template-columns: 1fr;
     }
 
