@@ -23,6 +23,7 @@ function dasabilitarSubMenu() {
         subMenu[i].addEventListener('click', function () {
             $('.menu ul .tipos-produtos').toggleClass('fecha');
             $('.menu ul .tipos-produtos').removeClass('mostra');
+            $('.menu ul .seta').removeClass('gira');
         });
     }
 
