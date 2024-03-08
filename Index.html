@@ -10,8 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/CSS/variables.css">
     <link rel="stylesheet" href="assets/CSS/elements.css">
     <link rel="stylesheet" href="assets/CSS/classes.css">
@@ -26,14 +26,21 @@
     <label class="close-menu-label" for="close-menu" title="Close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1 onclick="getElementById('close-menu').checked=false">
+            <h1 class="itens-menu">
                 <a href="#home"><img src="assets/img/logo.PNG" class="logo"></a>
             </h1>
             <nav>
-                <ul onclick="getElementById('close-menu').checked=false">
-                    <li><a href="#music">Music</a></li>
-                    <li><a href="#grid-one">Nossos Filhos</a></li>
-                    <li><a href="#gallery">Produtos</a></li>
+                <ul>
+                    <li class="itens-menu"><a href="#music">Music</a></li>
+                    <li class="itens-menu"><a href="#grid-one">Nossos Filhos</a></li>
+                    <li><a class="produtos">Produtos <span class="material-symbols-outlined seta">
+                        chevron_right</span></a>
+                        <ul class="tipos-produtos">
+                            <li ><a href="#cozinha" class="itens-menu itens-sub-menu">Cozinha</a></li>
+                            <li><a href="#eltro" class="itens-menu itens-sub-menu">Eletroportáteis</a></li>
+                            <li><a href="#banho" class="itens-menu itens-sub-menu">Quarto e Banheiro</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -105,7 +112,7 @@
         </div>
     </section>
 
-    <section id="gallery" class="top3 creme-bg section">
+    <section id="produtos" class="top3 white-bg section">
         <div id="cozinha" class="main-content grid-one-content">
             <h2 class="grid-main-heading">Cozinha</h2>
             <p class="grid-description">Produtos para montar nossa cozinha</p>
@@ -135,7 +142,7 @@
                                             R$&nbsp;10,40</span></span>
                                     <div class="jss181 jss182">sem juros no cartão</div>
                                     <div class="jss154"></div>
-                                    <div class="jss152 jss177">Frete Gratis                               
+                                    <div class="jss152 jss177">Frete Gratis
                                     </div>
                                     <div class="jss155"></div>
                                 </div>
@@ -251,35 +258,23 @@
 
                 <div> <!--Suporte para leite-->
                     <div class="gallery-img">
-                        <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
+                        <a href=""
                             target="_blank">
                             <img src="assets/img/produtos/suporte_leite.jpeg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                                alt="Porta Leite de saquinho 1 litro">
                         </a>
                     </div>
 
-                    <div class="">
-                        <p class="jss149 jss150 MuiTypography-h6">Espremedor de limão manual</p>
+                    <div class="teste">
+                        <p class="jss149 jss150 MuiTypography-h6">Porta Leite de saquinho 1 litro</p>
                         <div class="">
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss152">R$&nbsp;6,99</div>
+                                    <div class="jss152">R$&nbsp;10,99</div>
+                                    <P class="jss152">🥳COMPRADO🥳</P>
                                 </div>
                             </div>
-                            <div class="jss154"></div>
-                            <div class="jss169">
-                                <div class="jss164">
-                                    <div class="jss179">R$&nbsp;6,99</div><span class="jss181 jss182">em até 1x de<span
-                                            class="jss183">
-                                            R$&nbsp;6,99</span></span>
-                                    <div class="jss181 jss182">sem juros no cartão</div>
-                                    <div class="jss154"></div>
-                                    <div class="jss151 jss177">Frete R$ 9,90 ou <br>
-                                        <P class="jss152">Gratis Retirada na loja</P>
-                                    </div>
-                                    <div class="jss155"></div>
-                                </div>
-                            </div>
+                            <div class="jss155"></div>
                         </div>
                     </div>
                 </div>
@@ -287,26 +282,26 @@
 
                 <div> <!--Garrafa Termica-->
                     <div class="gallery-img">
-                        <a href="https://produto.mercadolivre.com.br/MLB-2173322288-copo-plastico-graduado-dosador-500-ml-_JM?matt_tool=81106094&matt_word=&matt_source=google&matt_campaign_id=14302215564&matt_ad_group_id=154967597508&matt_match_type=&matt_network=g&matt_device=c&matt_creative=649487315917&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=310787816&matt_product_id=MLB2173322288&matt_product_partition_id=1960857711113&matt_target_id=aud-2009166904988:pla-1960857711113&cq_src=google_ads&cq_cmp=14302215564&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gclid=CjwKCAiAopuvBhBCEiwAm8jaMZpZELk0tuAzz1Peb8_uX-6bj_REwKiP_dW_AoDGM1XyVrVXzI9PSxoCSosQAvD_BwE"
+                        <a href="https://shopee.com.br/Garrafa-T%C3%A9rmica-Caf%C3%A9-650ml-Floren%C3%A7a-Termica-Floren%C3%A7a-de-650ml-Unitermi-i.244683366.16485905483?sp_atk=11078622-d2e8-46a0-bed2-059b8cfea325&xptdk=11078622-d2e8-46a0-bed2-059b8cfea325"
                             target="_blank">
-                            <img src="assets/img/produtos/garrafa_termica.jpeg" alt="Copo Medidor">
+                            <img src="assets/img/produtos/garrafa_termica.jpeg" alt="Garrafa Térmica Café 650ml Florença - Preta">
                         </a>
                     </div>
 
                     <div class="">
-                        <p class="jss149 jss150 MuiTypography-h6">Copo Plástico Graduado Dosador 500 M</p>
+                        <p class="jss149 jss150 MuiTypography-h6">Garrafa Térmica Café 650ml Florença - Preta</p>
                         <div class="">
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss152">R$&nbsp;10,40</div>
+                                    <div class="jss152">R$&nbsp;34,75</div>
                                 </div>
                             </div>
                             <div class="jss154"></div>
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss179">R$&nbsp;10,40</div><span class="jss181 jss182">em até 1x de<span
+                                    <div class="jss179">R$&nbsp;34,75</div><span class="jss181 jss182">em até 1x de<span
                                             class="jss183">
-                                            R$&nbsp;10,40</span></span>
+                                            R$&nbsp;34,75</span></span>
                                     <div class="jss181 jss182">sem juros no cartão</div>
                                     <div class="jss154"></div>
                                     <div class="jss152 jss177">Frete Gratis
@@ -321,26 +316,26 @@
 
                 <div> <!--Martelo de Carne-->
                     <div class="gallery-img">
-                        <a href="https://www.amazon.com.br/Escorredor-Arroz-Inox-YAR1402-Yangzi/dp/B076YK9FZ2/ref=asc_df_B076YK9FZ2/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=16244332907408589778&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-1377915414424&psc=1&mcid=2b847cff87533e0b8c137f4251834631"
+                        <a href="https://www.amazon.com.br/Amaciante-Amaciador-Ferramenta-Alum%C3%ADnio-Borracha/dp/B095HL2Z9B"
                             target="_blank">
-                            <img src="assets/img/produtos/martelo_carne.jpeg" alt="Escorredor de Arroz Inox 26cm">
+                            <img src="assets/img/produtos/martelo_carne.jpeg" alt="Martelo de Carne">
                         </a>
                     </div>
 
                     <div class="">
-                        <p class="jss149 jss150 MuiTypography-h6">Escorredor de Arroz Inox 26cm</p>
+                        <p class="jss149 jss150 MuiTypography-h6">Martelo de Carne - Com Liga de Alumínio</p>
                         <div class="">
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss152">R$&nbsp;43,79</div>
+                                    <div class="jss152">R$&nbsp;53,45</div>
                                 </div>
                             </div>
                             <div class="jss154"></div>
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss179">R$&nbsp;43,79</div><span class="jss181 jss182">em até 1x de<span
+                                    <div class="jss179">R$&nbsp;53,45</div><span class="jss181 jss182">em até 1x de<span
                                             class="jss183">
-                                            R$&nbsp;43,79</span></span>
+                                            R$&nbsp;53,45</span></span>
                                     <div class="jss181 jss182">sem juros no cartão</div>
                                     <div class="jss154"></div>
                                     <div class="jss152 jss177">Frete Gratis
@@ -355,27 +350,26 @@
 
                 <div> <!--Ralador-->
                     <div class="gallery-img">
-                        <a href="https://www.amazon.com.br/Escorredor-Massa-Gedex-ECO-449-Prata/dp/B077K7D2BK/ref=asc_df_B077K7D2BK/?tag=googleshopp00-20&linkCode=df0&hvadid=379699132246&hvpos=&hvnetw=g&hvrand=16244332907408589778&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-907059553100&mcid=ff47890afe093a389eae5d6562d931a0&th=1"
+                        <a href="https://www.amazon.com.br/Ralador-Faces-Top-Pratic-Brinox/dp/B08PHZT2PC/ref=asc_df_B08PHZT2PC/?tag=googleshopp00-20&linkCode=df0&hvadid=379699132246&hvpos=&hvnetw=g&hvrand=2292878776224101393&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100213&hvtargid=pla-1394300798158&psc=1&mcid=2f5d2ea2cedc327bb7d4336e383e2801"
                             target="_blank">
-                            <img src="assets/img/produtos/ralador.jpeg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/ralador.jpeg" alt="Ralador 4 Faces Top Pratic, 16,5Cm, 8,8 x 6,3 x16,5cm, Brinox">
                         </a>
                     </div>
 
                     <div class="">
-                        <p class="jss149 jss150 MuiTypography-h6">Escorredor de Massa, 24 cm, Aço Inox</p>
+                        <p class="jss149 jss150 MuiTypography-h6">Ralador 4 Faces Top Pratic, 16,5Cm, 8,8 x 6,3 x16,5cm, Brinox</p>
                         <div class="">
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss152">R$&nbsp;22,93</div>
+                                    <div class="jss152">R$&nbsp;36,66</div>
                                 </div>
                             </div>
                             <div class="jss154"></div>
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss179">R$&nbsp;22,93</div><span class="jss181 jss182">em até 1x de<span
+                                    <div class="jss179">R$&nbsp;36,66</div><span class="jss181 jss182">em até 1x de<span
                                             class="jss183">
-                                            R$&nbsp;22,93</span></span>
+                                            R$&nbsp;36,66</span></span>
                                     <div class="jss181 jss182">sem juros no cartão</div>
                                     <div class="jss154"></div>
                                     <div class="jss152 jss177">Frete Gratis
@@ -390,27 +384,27 @@
 
                 <div> <!--Tabuas Vidro-->
                     <div class="gallery-img">
-                        <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
+                        <a href="https://shopee.com.br/T%C3%A1bua-De-Vidro-Temperado-40x28-Churrasco-Carne-Cozinha-Vidro-i.550463455.8696703659?sp_atk=b100a1f7-6c49-439f-ab31-51d24191156e&xptdk=b100a1f7-6c49-439f-ab31-51d24191156e"
                             target="_blank">
                             <img src="assets/img/produtos/Tabua de vidro.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                                alt="Tábua De Vidro Temperado 40x28">
                         </a>
                     </div>
 
                     <div class="">
-                        <p class="jss149 jss150 MuiTypography-h6">Espremedor de limão manual</p>
+                        <p class="jss149 jss150 MuiTypography-h6">Tábua De Vidro Temperado 40x28</p>
                         <div class="">
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss152">R$&nbsp;6,99</div>
+                                    <div class="jss152">R$&nbsp;25,90</div>
                                 </div>
                             </div>
                             <div class="jss154"></div>
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss179">R$&nbsp;6,99</div><span class="jss181 jss182">em até 1x de<span
+                                    <div class="jss179">R$&nbsp;25,90</div><span class="jss181 jss182">em até 1x de<span
                                             class="jss183">
-                                            R$&nbsp;6,99</span></span>
+                                            R$&nbsp;25,90</span></span>
                                     <div class="jss181 jss182">sem juros no cartão</div>
                                     <div class="jss154"></div>
                                     <div class="jss152 jss177">Frete Gratis
@@ -425,7 +419,7 @@
 
                 <div> <!--Porta Temperos-->
                     <div class="gallery-img">
-                        <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
+                        <a href="https://shopee.com.br/Porta-Temperos-Condimentos-Suporte-Cozinha-Girat%C3%B3rio-Inox-12-Potes-cor-Preta-i.427273762.23096944374?sp_atk=a9d2d34c-e3f1-473c-8f0a-e66aeb3cb57d&xptdk=a9d2d34c-e3f1-473c-8f0a-e66aeb3cb57d"
                             target="_blank">
                             <img src="assets/img/produtos/porta_temperos.jpeg"
                                 alt="Escorredor de Massa, 24 cm, Aço Inox">
@@ -433,23 +427,22 @@
                     </div>
 
                     <div class="">
-                        <p class="jss149 jss150 MuiTypography-h6">Espremedor de limão manual</p>
+                        <p class="jss149 jss150 MuiTypography-h6">Porta Temperos Condimentos Suporte Cozinha Giratório Inox 12 Potes, cor Preta</p>
                         <div class="">
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss152">R$&nbsp;6,99</div>
+                                    <div class="jss152">R$&nbsp;85,50</div>
                                 </div>
                             </div>
                             <div class="jss154"></div>
                             <div class="jss169">
                                 <div class="jss164">
-                                    <div class="jss179">R$&nbsp;6,99</div><span class="jss181 jss182">em até 1x de<span
+                                    <div class="jss179">R$&nbsp;85,50</div><span class="jss181 jss182">em até 1x de<span
                                             class="jss183">
-                                            R$&nbsp;6,99</span></span>
+                                            R$&nbsp;85,50</span></span>
                                     <div class="jss181 jss182">sem juros no cartão</div>
                                     <div class="jss154"></div>
-                                    <div class="jss151 jss177">Frete R$ 9,90 ou <br>
-                                        <P class="jss152">Gratis Retirada na loja</P>
+                                    <div class="jss151 jss177">Frete R$ 14,48
                                     </div>
                                     <div class="jss155"></div>
                                 </div>
@@ -531,8 +524,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Escorredor-Massa-Gedex-ECO-449-Prata/dp/B077K7D2BK/ref=asc_df_B077K7D2BK/?tag=googleshopp00-20&linkCode=df0&hvadid=379699132246&hvpos=&hvnetw=g&hvrand=16244332907408589778&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-907059553100&mcid=ff47890afe093a389eae5d6562d931a0&th=1"
                             target="_blank">
-                            <img src="assets/img/produtos/Pano-prato.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/Pano-prato.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -566,8 +558,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/Jarra.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/Jarra.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -601,8 +592,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/peneira.jpeg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/peneira.jpeg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -740,8 +730,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/pratos.jpeg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/pratos.jpeg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -845,7 +834,8 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Escorredor-Arroz-Inox-YAR1402-Yangzi/dp/B076YK9FZ2/ref=asc_df_B076YK9FZ2/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=16244332907408589778&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-1377915414424&psc=1&mcid=2b847cff87533e0b8c137f4251834631"
                             target="_blank">
-                            <img src="assets/img/produtos/kit_talheres_silicone.jpeg" alt="Escorredor de Arroz Inox 26cm">
+                            <img src="assets/img/produtos/kit_talheres_silicone.jpeg"
+                                alt="Escorredor de Arroz Inox 26cm">
                         </a>
                     </div>
 
@@ -879,8 +869,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Escorredor-Massa-Gedex-ECO-449-Prata/dp/B077K7D2BK/ref=asc_df_B077K7D2BK/?tag=googleshopp00-20&linkCode=df0&hvadid=379699132246&hvpos=&hvnetw=g&hvrand=16244332907408589778&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-907059553100&mcid=ff47890afe093a389eae5d6562d931a0&th=1"
                             target="_blank">
-                            <img src="assets/img/produtos/Copo.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/Copo.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -949,8 +938,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/talheres.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/talheres.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1053,8 +1041,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Escorredor-Massa-Gedex-ECO-449-Prata/dp/B077K7D2BK/ref=asc_df_B077K7D2BK/?tag=googleshopp00-20&linkCode=df0&hvadid=379699132246&hvpos=&hvnetw=g&hvrand=16244332907408589778&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-907059553100&mcid=ff47890afe093a389eae5d6562d931a0&th=1"
                             target="_blank">
-                            <img src="assets/img/produtos/Assadeira.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/Assadeira.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1123,8 +1110,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/jogo-faca.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/jogo-faca.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1158,7 +1144,7 @@
         </div>
     </section>
 
-    <section id="grid-two" class="top3 main-bg section">
+    <section id="eltro" class="top3 main-bg section">
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Eletroportáteis</h2>
             <p class="grid-description">Aparelhos elétricos que podem ser transportados com facilidade</p>
@@ -1270,18 +1256,18 @@
         </div>
     </section>
 
-    <section id="grid-three" class="top3 white-bg section">
+    <section id="banho" class="top3 white-bg section">
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Quarto e Banheiro</h2>
-            <p class="grid-description">Acessórios indispensáveis para tornar o seu banheiro mais organizado, prático e funcional.</p>
+            <p class="grid-description">Acessórios indispensáveis para tornar o seu banheiro mais organizado, prático e
+                funcional.</p>
             <div class="grid">
 
                 <div> <!--Toalhas-->
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/Toalhas.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/Toalhas.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1315,8 +1301,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/edredom.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/edredom.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1350,8 +1335,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/lencol.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/lencol.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1385,8 +1369,7 @@
                     <div class="gallery-img">
                         <a href="https://www.amazon.com.br/Espremedor-De-Limao-Aluminio-Mk/dp/B083PZQZZ5/ref=asc_df_B083PZQZZ5/?tag=googleshopp00-20&linkCode=df0&hvadid=456273449207&hvpos=&hvnetw=g&hvrand=7772801966951637962&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100204&hvtargid=pla-994066539334&psc=1&mcid=091e36c5954932d78efe51b0a3d7275b"
                             target="_blank">
-                            <img src="assets/img/produtos/Cobertor.jpg"
-                                alt="Escorredor de Massa, 24 cm, Aço Inox">
+                            <img src="assets/img/produtos/Cobertor.jpg" alt="Escorredor de Massa, 24 cm, Aço Inox">
                         </a>
                     </div>
 
@@ -1415,7 +1398,7 @@
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -1425,6 +1408,8 @@
                     class="heart">❤</span> por Ramom Landim</a></p>
     </footer>
     <a class="back-to-top" href="#">➤</a>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

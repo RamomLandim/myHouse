@@ -151,12 +151,13 @@
     background: var(--secondary-color);
 }
 
-.jss155 {
+/* .jss155 {
     width: inherit;
-    height: 0.2rem;
+    height: 0.3rem;
     margin: 1rem 0;
     background: var(--secondary-color);
-}
+    bottom: 0;
+} */
 
 .jss178 {
     flex: 1;
@@ -236,25 +237,32 @@
         display: block;
     }
 
-    .menu {
+     .menu {
         bottom: 0;
         text-align: center;
     }
-
+    
+    .menu ul ul{
+        display: none;
+        position: relative;
+    }
+    
     .menu-content,
     .menu-content ul {
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
     }
 
     .menu-content {
         height: 100vh;
     }
-
+    
     .menu {
         display: none;
     }
-
+    
+    
     .close-menu {
         position: fixed;
         z-index: 3;
@@ -290,16 +298,7 @@
 
     .menu-spacing {
         display: none;
-    }
-
-    .sub-menu {
-        display: none;
-    }
-    
-    .sub-menu.active {
-        display: block;
-        background: red;
-    }    
+    } 
 
 
     h1 {
